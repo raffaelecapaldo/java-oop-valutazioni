@@ -32,6 +32,23 @@ public class Main {
 		System.out.println("\n -----------------------------");
 		System.out.println("Sono stati promossi: " + nGraduated + " studenti");
 		
+		//BONUS
+		
+		Studente[] promotedStudents = new Studente[nGraduated];
+		Studente[] rejectedStudents = new Studente[20-nGraduated];
+		
+		for (int i = 0; i < studenti.length; i++) {
+			if (studenti[i].isRejected()) {
+				int counter = 0;
+				rejectedStudents[counter] = studenti[i];
+			}
+			else {
+				int counter = 0;
+				promotedStudents[counter] = studenti[i];
+			}
+		}
+		
+		
 	}
 
 }
