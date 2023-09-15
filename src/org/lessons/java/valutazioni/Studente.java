@@ -31,4 +31,10 @@ public class Studente {
 		
 	}
 	
+	public void printInfo() {
+		String info = "ID STUDENTE: " + this.id + " - PERCENTUALE ASSENZE: " +
+					this.percAbsences + "% - MEDIA VOTI: " + String.format("%.1f", this.avgVotes);
+		System.out.println(info);
+	}
+	
 }
