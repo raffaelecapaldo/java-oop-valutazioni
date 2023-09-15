@@ -17,7 +17,7 @@ public class Studente {
 		if (this.percAbsences > 50) {
 			return rejected;
 		}
-		else if (this.percAbsences >= 25 && this.percAbsences <= 50 && this.avgVotes >= 2) {
+		else if (this.percAbsences >= 25 && this.percAbsences <= 50 && this.avgVotes > 2) {
 			rejected = false;
 			return rejected;
 		}
