@@ -74,6 +74,7 @@ public class Main {
 		for (int i = 1; i < rejectedStudents.length; i++) {
 			
 			if (rejectedStudents[i].avgVotes < min) {
+				min = rejectedStudents[i].avgVotes;
 				lowestAvgID = rejectedStudents[i].id;
 			}
 			
@@ -84,6 +85,7 @@ public class Main {
 		
 		for (int i = 1; i < promotedStudents.length; i++) {
 			if (promotedStudents[i].avgVotes > max) {
+				max = promotedStudents[i].avgVotes;
 				highestAvgID = promotedStudents[i].id;
 			}
 		}
